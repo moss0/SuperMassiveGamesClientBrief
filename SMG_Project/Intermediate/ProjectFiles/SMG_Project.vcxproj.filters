@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\SMG_Project.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\SMG_Project.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\SMG_ProjectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\SMG_Project">
+      <UniqueIdentifier>{F2EB1F22-9C6B-378A-842C-40C2B6AD0BDF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\SMG_Project\SMG_Project.Build.cs">
+      <Filter>Source\SMG_Project</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\SMG_Project\SMG_Project.cpp">
+      <Filter>Source\SMG_Project</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SMG_Project\SMG_Project.h">
+      <Filter>Source\SMG_Project</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SMG_Project\SMG_ProjectCharacter.cpp">
+      <Filter>Source\SMG_Project</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SMG_Project\SMG_ProjectCharacter.h">
+      <Filter>Source\SMG_Project</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SMG_Project\SMG_ProjectGameMode.cpp">
+      <Filter>Source\SMG_Project</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SMG_Project\SMG_ProjectGameMode.h">
+      <Filter>Source\SMG_Project</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

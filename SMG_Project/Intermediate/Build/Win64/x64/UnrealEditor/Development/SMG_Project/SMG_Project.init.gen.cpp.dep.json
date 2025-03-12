@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\2317919\\documents\\github\\supermassivegamesclientbrief\\smg_project\\intermediate\\build\\win64\\unrealeditor\\inc\\smg_project\\uht\\smg_project.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\2317919\\documents\\github\\supermassivegamesclientbrief\\smg_project\\intermediate\\build\\win64\\x64\\smg_projecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\2317919\\documents\\github\\supermassivegamesclientbrief\\smg_project\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\smg_project\\definitions.smg_project.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
