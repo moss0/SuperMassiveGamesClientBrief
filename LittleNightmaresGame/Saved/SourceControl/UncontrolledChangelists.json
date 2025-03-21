@@ -5,6 +5,11 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"D:/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"D:/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Maps/TestLevel.umap",
+				"D:/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Input/Actions/IA_Climb.uasset",
+				"D:/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Input/IMC_Default.uasset",
+				"D:/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Blueprints/BP_LadderVolume.uasset",
 				"C:/Users/2409111/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Maps/Room.umap",
 				"C:/Users/2409111/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Static/Materials/M_LightFunction.uasset",
 				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
