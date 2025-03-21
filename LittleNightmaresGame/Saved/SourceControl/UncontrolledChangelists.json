@@ -1,0 +1,15 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
+				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Maps/Room.umap",
+				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Static/Meshes/vent.uasset",
+				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Blueprints/BP_PlayerCamera.uasset"
+			]
+		}
+	]
+}
