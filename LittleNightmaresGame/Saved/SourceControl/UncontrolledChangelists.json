@@ -5,6 +5,17 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Maps/Room.umap",
+				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Static/Meshes/vent.uasset",
+				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Blueprints/BP_PlayerCamera.uasset",
+				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Blueprints/BP_KeyDoor.uasset",
+				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Blueprints/BP_Key.uasset",
+				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Static/Fonts/AmaticSC-Bold.uasset",
+				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Static/Fonts/AmaticSC-Regular.uasset",
+				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Maps/TestLevel.umap",
+				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Blueprints/BP_Camera.uasset",
+				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Blueprints/BP_CameraVolume.uasset",
 				"D:/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Blueprints/BP_ThirdPersonCharacter.uasset",
 				"D:/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Maps/TestLevel.umap",
 				"D:/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Input/Actions/IA_Climb.uasset",
@@ -329,14 +340,8 @@
 				"C:/Users/2409111/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Maps/Room.umap",
 				"C:/Users/2409111/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Static/Materials/M_LightFunction.uasset",
 				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
-				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Maps/Room.umap",
-				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Static/Meshes/vent.uasset",
-				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Blueprints/BP_PlayerCamera.uasset",
-				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Blueprints/BP_ThirdPersonCharacter.uasset",
 				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Blueprints/UI/WBP_Text0.uasset",
 				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Blueprints/UI/WBP_InGameUI.uasset",
-				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Blueprints/BP_KeyDoor.uasset",
-				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Blueprints/BP_Key.uasset",
 				"C:/Users/2317919/Documents/GitHub/SuperMassiveGamesClientBrief/LittleNightmaresGame/Content/Dynamic/Blueprints/UI/WBP_Button.uasset"
 			]
 		}
