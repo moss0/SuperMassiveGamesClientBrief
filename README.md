@@ -1,5 +1,3 @@
-# SuperMassiveGamesClientBrief
- Client brief for Super Massive Games
  # Assignment Information
 
 ## Task Outline
@@ -16,13 +14,8 @@ Weighting: 100%
 
 <!-- TODO: Confirm topics with Maggie -->
 
-Your development commentary must detail your individual input to the project, the research conducted and its application. Your research must be centred around answering **ONE** of the following questions:
-1. What are the different ways in which the experience of immersion has been theorised, and which theorisation, if any, is most relevant to video games? Draw on relevant scholarship and your analysis of appropriate video game examples.  
-2. Will video games inevitably mature into a new narrative artform driven by their storytelling ambitions? Consider different narrative structures deployed by game designers and the player’s role in experiencing and constructing game stories.  
-3. What does it mean to approach a video game from a ludological standpoint, and should theories relating to rules, games, and play be central to the analysis of video games?  
-4. How does the design of video game space affect the actions and experiences of players? Consider how different game spaces have been categorised in the literature and concepts of space and place discussed in the lecture.  
-5. What are the key similarities and differences between the formal aspects of the video game and film? And, what can the answer to this question tell us about the relationship between them? Consider aspects like narrative and the concept of remediation covered in lecture six. 
-6. Are all video games essentially simulations that give players a new degree of control over media texts, or does considering the medium through the concept of simulation suggest it has the power to train their players to behave in certain ways? 
+
+How does the design of video game space affect the actions and experiences of players? Consider how different game spaces have been categorised in the literature and concepts of space and place discussed in the lecture.
 
 ## Key Requirements
 
@@ -38,10 +31,7 @@ Provide a **project commentary** detailing the process of developing the project
 ## Submission Deliverables
 
 ### Development Commentary  
-Submit a Development Commentary in **.html format** with a word count of 2,500 words. This can be:  
-- Hosted online as part of a **portfolio website**.  
-- Presented as a **README file** in a GitHub repository.  
-- Uploaded directly as a **standalone file**.  
+
 
 #### Content Requirements  
 The Development Commentary must include:
@@ -92,6 +82,8 @@ You are required to research **at least one source from each of the following ca
   - Figure titles and descriptions  
 
 ### Repository Link  
+https://github.com/moss0/SuperMassiveGamesClientBrief
+
 - If the Development Commentary is submitted as a **standalone .html file** or hosted online, it must include a link to a **publicly accessible repository** (e.g., GitHub) containing your **source code** and/or **project files**.  
 - If the Development Commentary is presented as a **Git repository README**, this requirement is automatically fulfilled.
 
@@ -130,6 +122,14 @@ You are required to research **at least one source from each of the following ca
 - Explain how this technical knowledge supports your project work and guides your decision-making process.
 
 ## Implementation (Suggested Word Count 1,100)  
+
+### BP_ThirdPersonCharacter
+(link)
+This Blueprint is the player character pawn. It has many events that are activated by inputs.
+
+#### Functionality
+- EnhancedInputAction IA_Crouch: Controls the crouching mechanic that makes the player shorter and slower in order to move through tight spaces.
+- EnhancedInputAction IA_LightToggle: Toggles the flashlight between the on and off states using a flip flop that enables and disables the visiblity of a spotlight on the player's model.
 
 ### Process
 - Provide a step-by-step breakdown of your development process, including key milestones and decisions made throughout the project.  
@@ -296,6 +296,7 @@ Your **technical skills** will be assessed based on the **quality of your implem
 - **Be critical**: Analyse both **successful** and **unsuccessful** sources to show a well-rounded understanding of your project’s context.
 
 
+## Citations
 
 My citations:
 {{Cite AV media| people = Gameplay Onlyundefined (Director)| title = Little Nightmares 2 Gameplay Walkthrough FULL GAME (no commentary)| access-date = 2025-03-13| date = 2021-02-10| time = 3:39:44| url = https://www.youtube.com/watch?v=gKCvphbCpPE}}
