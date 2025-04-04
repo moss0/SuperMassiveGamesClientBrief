@@ -121,15 +121,140 @@ https://github.com/moss0/SuperMassiveGamesClientBrief
 - Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
 - Explain how this technical knowledge supports your project work and guides your decision-making process.
 
+#### Links
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{Cite web| title = How do I disconnect/cut/remove Blueprint wires/lines - Programming & Scripting / UI| work = Epic Developer Community Forums| access-date = 2025-03-24| date = 2016-09-17| url = https://forums.unrealengine.com/t/how-do-i-disconnect-cut-remove-blueprint-wires-lines/370820}}
+
+{{Cite AV media| people = Cobra Codeundefined (Director)| title = Learn Blueprints in Unreal Engine 5 - Beginner Tutorial| access-date = 2025-03-24| date = 2022-05-11| time = 51:28| url = https://www.youtube.com/watch?v=opyV7rhKSFc}}
+
+{{Cite AV media| people = ACDevundefined (Director)| title = Variables - Actor Reference| access-date = 2025-03-24| date = 2020-02-09| time = 9:40| url = https://www.youtube.com/watch?v=Ke3GaR8vQKI}}
+
+{{Cite AV media| people = Tyler Serinoundefined (Director)| title = Casting Explained {{!}} Unreal Engine 5 Tutorial| access-date = 2025-03-25| date = 2023-05-29| time = 11:13| url = https://www.youtube.com/watch?v=DBIlsxj5quA}}
+
+{{Cite web| title = Events vs Functions - Development / Programming & Scripting| work = Epic Developer Community Forums| access-date = 2025-03-25| date = 2022-08-22| url = https://forums.unrealengine.com/t/events-vs-functions/632243}}
+
+{{Cite AV media| people = Tyler Serinoundefined (Director)| title = Event Dispatchers {{!}} Unreal Engine 5 Tutorial| access-date = 2025-03-25| date = 2023-07-04| time = 19:08| url = https://www.youtube.com/watch?v=r20VEPH_e0o}}
+
+{{Cite AV media| people = Matt Asplandundefined (Director)| title = AI Sight Detection And Chase - Unreal Engine 5 Tutorial| access-date = 2025-03-27| date = 2022-06-27| time = 7:32| url = https://www.youtube.com/watch?v=tKrBdxm4uxI}}
+
+{{Cite AV media| people = Unreal Engineundefined (Director)| title = Unreal Engine AI with Behavior Trees {{!}} Unreal Engine| access-date = 2025-03-27| date = 2020-11-25| time = 26:37| url = https://www.youtube.com/watch?v=iY1jnFvHgbE}}
+
+{{Cite AV media| people = Druid Mechanicsundefined (Director)| title = Change Your Mesh's Pivot Point in the Engine! #unrealengine5 #modelingmode #pivot #ue5 #blender| access-date = 2025-04-01| date = 2024-04-22| time = 0:41| url = https://www.youtube.com/watch?v=f50yoTWThnw}}
+{{Cite AV media| people = Ali Elzoheiryundefined (Director)| title = Smart Enemy AI {{!}} (Part 1: Behavior Trees) | Tutorial in Unreal Engine 5 (UE5)| access-date = 2025-04-03| date = 2023-05-30| time = 45:30| url = https://www.youtube.com/watch?v=-t3PbGRazKg}}
+
+
+
+Little Nightmares 2 Gameplay Walkthrough FULL GAME (no commentary)
+- [link](https://www.youtube.com/watch?v=gKCvphbCpPE)
+- I used this gameplay video to get a sense of scale of the environment and how it compares to the player.
+
+
+
+Custom Events in Unreal Engine - Unreal Engine 5.5 Documentation
+- [link](https://dev.epicgames.com/documentation/en-us/unreal-engine/custom-events-in-unreal-engine)
+- I did not know how to make custom events so I looked it up.
+
+
+
+UE5 Blueprint Tips - Timers
+- [link](https://www.youtube.com/watch?v=yadaxTMjxQg)
+- I needed to learn how to set a delay.
+
+
+
+Unreal Engine Quick Tips: Straight Blueprint Connections & 15 Tips for Clean and Tidy Blueprints in Unreal Engine.
+- [link](https://www.youtube.com/watch?v=0NtaaemmZXY) & [link](https://www.youtube.com/watch?v=4D5UfHZx_qU)
+- Learning how to make my Blueprints neat and tidy improved my workflow.
+
+
+
+Slow Down and Speed Up Time in Unreal Engine 5
+- [link](https://www.youtube.com/watch?v=r3roJbLZ3BQ)
+- I used the Set Global Time Dilation node connected to debug keys to try and diagnose a bug I was having with the death by falling mechanic.
+
+
+
+How to make Modular Widgets/UI - Base/Parent Widgets
+- [link](https://www.youtube.com/watch?v=dWx6hIL5Gko)
+- I used this modular widgets tutorial in order to implement my main menu and pause menu.
+
+
+
+Enhanced Input in Unreal Engine - Unreal Engine 5.5 Documentation
+- [link](https://dev.epicgames.com/documentation/en-us/unreal-engine/enhanced-input-in-unreal-engine)
+- I used this to properly understand enhanced input.
+
+
+
+How to Make a Simple Climbing System in Unreal Engine 5
+- [link](https://www.youtube.com/watch?v=wKafQYX8fz4)
+- This helped me to create a foundation for my climbing system. I build off of it an improved it later.
+
+
+
+How to raycast/line trace in Unreal Engine
+- [link](https://www.youtube.com/watch?v=DUjoilmrPDo)
+- I needed this to implement the climbing, grabbing and falling to death systems. 
+
+
+
+How do I stop the editor from moving the duplicated object?
+- [link](https://forums.unrealengine.com/t/how-do-i-stop-the-editor-from-moving-the-duplicated-object/2034/5)
+-
+
+
+
+How to subtract objects from Marquee Selection?
+- [link](https://forums.unrealengine.com/t/how-to-subtract-objects-from-marquee-selection/496445)
+-
+
+
+
+How To Change Player Start Position And Character In Unreal Engine 5   Beginner Tutorial
+- [link](https://www.youtube.com/watch?v=MXmz_BhiZaY)
+-
+
+Little Nightmares Wiki
+- [link](https://littlenightmares.fandom.com/wiki/Controls)
+
+How do I disconnect/cut/remove Blueprint wires/lines
+
+
+
+
+Learn Blueprints in Unreal Engine 5 - Beginner Tutorial
+
+
+
+
+
+
+
+
+Unreal Engine AI with Behavior Trees
+- link
+- This video is perfect for beginners learning how to implement AI in Unreal Engine with no prior experience. I used it to create the enemy in game with its hunting phase and random patrolling phase.
+
+Change Your Mesh's Pivot Point in the Engine!
+- link
+- This short video helped me to correct off centre pivot points on our static meshes.
+
+
 ## Implementation (Suggested Word Count 1,100)  
 
-### BP_ThirdPersonCharacter
-(link)
-This Blueprint is the player character pawn. It has many events that are activated by inputs.
-
-#### Functionality
-- EnhancedInputAction IA_Crouch: Controls the crouching mechanic that makes the player shorter and slower in order to move through tight spaces.
-- EnhancedInputAction IA_LightToggle: Toggles the flashlight between the on and off states using a flip flop that enables and disables the visiblity of a spotlight on the player's model.
 
 ### Process
 - Provide a step-by-step breakdown of your development process, including key milestones and decisions made throughout the project.  
@@ -152,15 +277,21 @@ This Blueprint is the player character pawn. It has many events that are activat
 - If any difficulties remain unresolved, explain the impact on the project and any mitigation strategies used to minimise their effect.  
 - Reflect on what you would do differently in future projects to avoid similar issues.
 
-## Outcomes (Suggested Word Count 300) 
+I had many difficulties with the climbing system, there were many cases where something unintended would occur. For example, ensuring the correct movement mode and orient to movement boolean is set when moving off of the ladder, while still holding down the event key. I solved this example by using a branch to check if the player is this infront of the ladder and setting the movement mode and orient to movement if false.
+
+<iframe src="https://blueprintue.com/render/imchtvzh/" scrolling="no" allowfullscreen></iframe>
+
+#### The climbing event in BP_ThirdPersonCharacter. The example above is referring to the ongoing pin.
+
+## Outcomes (Suggested Word Count 300)
 
 ### Source Code/Project Files
-- Provide a link to your complete source code or project files.  
-- Ensure the link is publicly accessible or shared with the appropriate permissions.  
+- Provide a link to your complete source code or project files.
+- Ensure the link is publicly accessible or shared with the appropriate permissions.
 - Include a brief description of the files provided, highlighting key components or any instructions required to run the project.
 
 ### Build Link
-- Share a link to a playable or executable build of your project.  
+- Share a link to a playable or executable build of your project.
 - Ensure the build is accessible across relevant platforms and is publicly accessible.  
 - Include any necessary instructions for running the build, such as system requirements or installation steps.
 
@@ -299,27 +430,72 @@ Your **technical skills** will be assessed based on the **quality of your implem
 ## Citations
 
 My citations:
+
 {{Cite AV media| people = Gameplay Onlyundefined (Director)| title = Little Nightmares 2 Gameplay Walkthrough FULL GAME (no commentary)| access-date = 2025-03-13| date = 2021-02-10| time = 3:39:44| url = https://www.youtube.com/watch?v=gKCvphbCpPE}}
+
 {{Cite web| title = Custom Events in Unreal Engine {{!}} Unreal Engine 5.5 Documentation | Epic Developer Community| work = Epic Games Developer| access-date = 2025-03-23| url = https://dev.epicgames.com/documentation/en-us/unreal-engine/custom-events-in-unreal-engine}}
+
 {{Cite AV media| people = UnrealityBitesundefined (Director)| title = UE5 Blueprint Tips - Timers| access-date = 2025-03-23| date = 2022-03-27| time = 17:25| url = https://www.youtube.com/watch?v=yadaxTMjxQg}}
+
 {{Cite AV media| people = Mike Dolanundefined (Director)| title = Unreal Engine Quick Tips: Straight Blueprint Connections| access-date = 2025-03-23| date = 2022-01-11| time = 0:36| url = https://www.youtube.com/watch?v=0NtaaemmZXY}}
+
 {{Cite AV media| people = Cobra Codeundefined (Director)| title = 15 Tips for Clean and Tidy Blueprints in Unreal Engine| access-date = 2025-03-23| date = 2021-12-10| time = 9:05| url = https://www.youtube.com/watch?v=4D5UfHZx_qU}}
+
 {{Cite AV media| people = Gorka Gamesundefined (Director)| title = Slow Down and Speed Up Time in Unreal Engine 5| access-date = 2025-03-23| date = 2022-08-13| time = 3:07| url = https://www.youtube.com/watch?v=r3roJbLZ3BQ}}
+
 {{Cite AV media| people = Kekdotundefined (Director)| title = How to make Modular Widgets/UI {{!}} Base/Parent Widgets | Unreal Engine 5 Tutorial| access-date = 2025-03-23| date = 2023-01-25| time = 11:39| url = https://www.youtube.com/watch?v=dWx6hIL5Gko}}
+
 {{Cite web| title = Enhanced Input in Unreal Engine {{!}} Unreal Engine 5.5 Documentation | Epic Developer Community| work = Epic Games Developer| access-date = 2025-03-24| url = https://dev.epicgames.com/documentation/en-us/unreal-engine/enhanced-input-in-unreal-engine}}
+
 {{Cite AV media| people = Gorka Gamesundefined (Director)| title = How to Make a Simple Climbing System in Unreal Engine 5| access-date = 2025-03-24| date = 2022-12-16| time = 25:43| url = https://www.youtube.com/watch?v=wKafQYX8fz4}}
+
 {{Cite AV media| people = The Unreal Cousinzzzundefined (Director)| title = How to raycast/line trace in Unreal Engine| access-date = 2025-03-24| date = 2020-09-02| time = 8:06| url = https://www.youtube.com/watch?v=DUjoilmrPDo}}
+
 {{Cite web| title = How do I stop the editor from moving the duplicated object? - Community / Community & Industry Discussion| work = Epic Developer Community Forums| access-date = 2025-03-24| date = 2014-11-10| url = https://forums.unrealengine.com/t/how-do-i-stop-the-editor-from-moving-the-duplicated-object/2034/5}}
+
 {{Cite web| title = How to subtract objects from Marquee Selection? - Community / Community & Industry Discussion| work = Epic Developer Community Forums| access-date = 2025-03-24| date = 2022-02-10| url = https://forums.unrealengine.com/t/how-to-subtract-objects-from-marquee-selection/496445}}
+
 {{Cite AV media| people = Unreal ART With Alirezaundefined (Director)| title = How To Change Player Start Position And Character In Unreal Engine 5   Beginner Tutorial| access-date = 2025-03-24| date = 2024-08-17| time = 7:13| url = https://www.youtube.com/watch?v=MXmz_BhiZaY}}
 {{Cite web| title = Controls| work = Little Nightmares Wiki| access-date = 2025-03-24| date = 2023-06-30| url = https://littlenightmares.fandom.com/wiki/Controls}}
+
 {{Cite web| title = How do I disconnect/cut/remove Blueprint wires/lines - Programming & Scripting / UI| work = Epic Developer Community Forums| access-date = 2025-03-24| date = 2016-09-17| url = https://forums.unrealengine.com/t/how-do-i-disconnect-cut-remove-blueprint-wires-lines/370820}}
+
 {{Cite AV media| people = Cobra Codeundefined (Director)| title = Learn Blueprints in Unreal Engine 5 - Beginner Tutorial| access-date = 2025-03-24| date = 2022-05-11| time = 51:28| url = https://www.youtube.com/watch?v=opyV7rhKSFc}}
+
 {{Cite AV media| people = ACDevundefined (Director)| title = Variables - Actor Reference| access-date = 2025-03-24| date = 2020-02-09| time = 9:40| url = https://www.youtube.com/watch?v=Ke3GaR8vQKI}}
+
 {{Cite AV media| people = Tyler Serinoundefined (Director)| title = Casting Explained {{!}} Unreal Engine 5 Tutorial| access-date = 2025-03-25| date = 2023-05-29| time = 11:13| url = https://www.youtube.com/watch?v=DBIlsxj5quA}}
+
 {{Cite web| title = Events vs Functions - Development / Programming & Scripting| work = Epic Developer Community Forums| access-date = 2025-03-25| date = 2022-08-22| url = https://forums.unrealengine.com/t/events-vs-functions/632243}}
+
 {{Cite AV media| people = Tyler Serinoundefined (Director)| title = Event Dispatchers {{!}} Unreal Engine 5 Tutorial| access-date = 2025-03-25| date = 2023-07-04| time = 19:08| url = https://www.youtube.com/watch?v=r20VEPH_e0o}}
+
 {{Cite AV media| people = Matt Asplandundefined (Director)| title = AI Sight Detection And Chase - Unreal Engine 5 Tutorial| access-date = 2025-03-27| date = 2022-06-27| time = 7:32| url = https://www.youtube.com/watch?v=tKrBdxm4uxI}}
+
 {{Cite AV media| people = Unreal Engineundefined (Director)| title = Unreal Engine AI with Behavior Trees {{!}} Unreal Engine| access-date = 2025-03-27| date = 2020-11-25| time = 26:37| url = https://www.youtube.com/watch?v=iY1jnFvHgbE}}
+
 {{Cite AV media| people = Druid Mechanicsundefined (Director)| title = Change Your Mesh's Pivot Point in the Engine! #unrealengine5 #modelingmode #pivot #ue5 #blender| access-date = 2025-04-01| date = 2024-04-22| time = 0:41| url = https://www.youtube.com/watch?v=f50yoTWThnw}}
 {{Cite AV media| people = Ali Elzoheiryundefined (Director)| title = Smart Enemy AI {{!}} (Part 1: Behavior Trees) | Tutorial in Unreal Engine 5 (UE5)| access-date = 2025-04-03| date = 2023-05-30| time = 45:30| url = https://www.youtube.com/watch?v=-t3PbGRazKg}}
+
+
+How to subtract objects from Marquee Selection?
+
+How To Change Player Start Position And Character In Unreal Engine 5
+
+How do I disconnect/cut/remove Blueprint wires/lines
+
+Learn Blueprints in Unreal Engine 5 - Beginner Tutorial
+
+Variables - Actor Reference
+
+Casting Explained - Unreal Engine 5 Tutorial
+
+Events vs Functions - Development / Programming & Scripting
+
+Event Dispatchers - Unreal Engine 5 Tutorial
+
+AI Sight Detection And Chase - Unreal Engine 5 Tutorial
+
+Unreal Engine AI with Behavior Trees
+
+Change Your Mesh's Pivot Point in the Engine!
