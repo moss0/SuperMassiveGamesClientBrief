@@ -84,9 +84,6 @@ You are required to research **at least one source from each of the following ca
 ### Repository Link  
 https://github.com/moss0/SuperMassiveGamesClientBrief
 
-- If the Development Commentary is submitted as a **standalone .html file** or hosted online, it must include a link to a **publicly accessible repository** (e.g., GitHub) containing your **source code** and/or **project files**.  
-- If the Development Commentary is presented as a **Git repository README**, this requirement is automatically fulfilled.
-
 ### Build Link  
 - Include a link to a **publicly accessible build** of the project.  
 - Provide **clear instructions** on how to run or use the build.
@@ -121,137 +118,191 @@ https://github.com/moss0/SuperMassiveGamesClientBrief
 - Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
 - Explain how this technical knowledge supports your project work and guides your decision-making process.
 
-#### Links
+<br>
+
+> Little Nightmares 2 Gameplay Walkthrough FULL GAME (no commentary)
+>
+> [link](https://www.youtube.com/watch?v=gKCvphbCpPE)
+>
+> I used this gameplay video to get a sense of scale of the environment and how it compares to the player.
 
+<br>
+
+> Custom Events in Unreal Engine - Unreal Engine 5.5 Documentation
+>
+> [link](https://dev.epicgames.com/documentation/en-us/unreal-engine/custom-events-in-unreal-engine)
+>
+> I did not know how to make custom events so I looked it up.
 
+<br>
+
+> UE5 Blueprint Tips - Timers
+>
+> [link](https://www.youtube.com/watch?v=yadaxTMjxQg)
+>
+> I needed to learn how to set a delay.
 
+<br>
+
+> Unreal Engine Quick Tips: Straight Blueprint Connections & 15 Tips for Clean and Tidy Blueprints in Unreal Engine
+>
+> [link](https://www.youtube.com/watch?v=0NtaaemmZXY) & [link](https://www.youtube.com/watch?v=4D5UfHZx_qU)
+>
+> Learning how to make my Blueprints neat and tidy improved my workflow.
 
+<br>
+
+> Slow Down and Speed Up Time in Unreal Engine 5
+>
+> [link](https://www.youtube.com/watch?v=r3roJbLZ3BQ)
+>
+> I used the Set Global Time Dilation node connected to debug keys to try and diagnose a bug I was having with the death by falling mechanic.
 
+<br>
+
+> How to make Modular Widgets/UI - Base/Parent Widgets
+>
+> [link](https://www.youtube.com/watch?v=dWx6hIL5Gko)
+>
+> I used this modular widgets tutorial in order to implement my main menu and pause menu.
 
+<br>
+
+> Enhanced Input in Unreal Engine - Unreal Engine 5.5 Documentation
+>
+> [link](https://dev.epicgames.com/documentation/en-us/unreal-engine/enhanced-input-in-unreal-engine)
+>
+> I used this to properly understand enhanced input.
 
+<br>
+
+> How to Make a Simple Climbing System in Unreal Engine 5
+>
+> [link](https://www.youtube.com/watch?v=wKafQYX8fz4)
+>
+> This helped me to create a foundation for my climbing system. I build off of it an improved it later.
 
+<br>
+
+> How to raycast/line trace in Unreal Engine
+>
+> [link](https://www.youtube.com/watch?v=DUjoilmrPDo)
+>
+> I needed this to implement the climbing, grabbing and falling to death systems. 
 
+<br>
+
+> Casting Explained - Unreal Engine 5 Tutorial 
+>
+> [link](https://www.youtube.com/watch?v=DBIlsxj5quA)
+>
+> 
 
-
-
-
-
-{{Cite web| title = How do I disconnect/cut/remove Blueprint wires/lines - Programming & Scripting / UI| work = Epic Developer Community Forums| access-date = 2025-03-24| date = 2016-09-17| url = https://forums.unrealengine.com/t/how-do-i-disconnect-cut-remove-blueprint-wires-lines/370820}}
-
-{{Cite AV media| people = Cobra Codeundefined (Director)| title = Learn Blueprints in Unreal Engine 5 - Beginner Tutorial| access-date = 2025-03-24| date = 2022-05-11| time = 51:28| url = https://www.youtube.com/watch?v=opyV7rhKSFc}}
-
-{{Cite AV media| people = ACDevundefined (Director)| title = Variables - Actor Reference| access-date = 2025-03-24| date = 2020-02-09| time = 9:40| url = https://www.youtube.com/watch?v=Ke3GaR8vQKI}}
-
-{{Cite AV media| people = Tyler Serinoundefined (Director)| title = Casting Explained {{!}} Unreal Engine 5 Tutorial| access-date = 2025-03-25| date = 2023-05-29| time = 11:13| url = https://www.youtube.com/watch?v=DBIlsxj5quA}}
-
-{{Cite web| title = Events vs Functions - Development / Programming & Scripting| work = Epic Developer Community Forums| access-date = 2025-03-25| date = 2022-08-22| url = https://forums.unrealengine.com/t/events-vs-functions/632243}}
-
-{{Cite AV media| people = Tyler Serinoundefined (Director)| title = Event Dispatchers {{!}} Unreal Engine 5 Tutorial| access-date = 2025-03-25| date = 2023-07-04| time = 19:08| url = https://www.youtube.com/watch?v=r20VEPH_e0o}}
-
-{{Cite AV media| people = Matt Asplandundefined (Director)| title = AI Sight Detection And Chase - Unreal Engine 5 Tutorial| access-date = 2025-03-27| date = 2022-06-27| time = 7:32| url = https://www.youtube.com/watch?v=tKrBdxm4uxI}}
-
-{{Cite AV media| people = Unreal Engineundefined (Director)| title = Unreal Engine AI with Behavior Trees {{!}} Unreal Engine| access-date = 2025-03-27| date = 2020-11-25| time = 26:37| url = https://www.youtube.com/watch?v=iY1jnFvHgbE}}
-
-{{Cite AV media| people = Druid Mechanicsundefined (Director)| title = Change Your Mesh's Pivot Point in the Engine! #unrealengine5 #modelingmode #pivot #ue5 #blender| access-date = 2025-04-01| date = 2024-04-22| time = 0:41| url = https://www.youtube.com/watch?v=f50yoTWThnw}}
-{{Cite AV media| people = Ali Elzoheiryundefined (Director)| title = Smart Enemy AI {{!}} (Part 1: Behavior Trees) | Tutorial in Unreal Engine 5 (UE5)| access-date = 2025-04-03| date = 2023-05-30| time = 45:30| url = https://www.youtube.com/watch?v=-t3PbGRazKg}}
-
-
-
-Little Nightmares 2 Gameplay Walkthrough FULL GAME (no commentary)
-- [link](https://www.youtube.com/watch?v=gKCvphbCpPE)
-- I used this gameplay video to get a sense of scale of the environment and how it compares to the player.
-
-
-
-Custom Events in Unreal Engine - Unreal Engine 5.5 Documentation
-- [link](https://dev.epicgames.com/documentation/en-us/unreal-engine/custom-events-in-unreal-engine)
-- I did not know how to make custom events so I looked it up.
-
-
-
-UE5 Blueprint Tips - Timers
-- [link](https://www.youtube.com/watch?v=yadaxTMjxQg)
-- I needed to learn how to set a delay.
-
-
-
-Unreal Engine Quick Tips: Straight Blueprint Connections & 15 Tips for Clean and Tidy Blueprints in Unreal Engine.
-- [link](https://www.youtube.com/watch?v=0NtaaemmZXY) & [link](https://www.youtube.com/watch?v=4D5UfHZx_qU)
-- Learning how to make my Blueprints neat and tidy improved my workflow.
-
-
-
-Slow Down and Speed Up Time in Unreal Engine 5
-- [link](https://www.youtube.com/watch?v=r3roJbLZ3BQ)
-- I used the Set Global Time Dilation node connected to debug keys to try and diagnose a bug I was having with the death by falling mechanic.
-
-
-
-How to make Modular Widgets/UI - Base/Parent Widgets
-- [link](https://www.youtube.com/watch?v=dWx6hIL5Gko)
-- I used this modular widgets tutorial in order to implement my main menu and pause menu.
-
-
-
-Enhanced Input in Unreal Engine - Unreal Engine 5.5 Documentation
-- [link](https://dev.epicgames.com/documentation/en-us/unreal-engine/enhanced-input-in-unreal-engine)
-- I used this to properly understand enhanced input.
-
-
-
-How to Make a Simple Climbing System in Unreal Engine 5
-- [link](https://www.youtube.com/watch?v=wKafQYX8fz4)
-- This helped me to create a foundation for my climbing system. I build off of it an improved it later.
-
-
-
-How to raycast/line trace in Unreal Engine
-- [link](https://www.youtube.com/watch?v=DUjoilmrPDo)
-- I needed this to implement the climbing, grabbing and falling to death systems. 
-
-
-
-How do I stop the editor from moving the duplicated object?
-- [link](https://forums.unrealengine.com/t/how-do-i-stop-the-editor-from-moving-the-duplicated-object/2034/5)
--
-
-
-
-How to subtract objects from Marquee Selection?
-- [link](https://forums.unrealengine.com/t/how-to-subtract-objects-from-marquee-selection/496445)
--
-
-
-
-How To Change Player Start Position And Character In Unreal Engine 5   Beginner Tutorial
-- [link](https://www.youtube.com/watch?v=MXmz_BhiZaY)
--
-
-Little Nightmares Wiki
-- [link](https://littlenightmares.fandom.com/wiki/Controls)
-
-How do I disconnect/cut/remove Blueprint wires/lines
-
-
-
-
-Learn Blueprints in Unreal Engine 5 - Beginner Tutorial
-
-
-
-
-
-
-
-
-Unreal Engine AI with Behavior Trees
-- link
-- This video is perfect for beginners learning how to implement AI in Unreal Engine with no prior experience. I used it to create the enemy in game with its hunting phase and random patrolling phase.
-
-Change Your Mesh's Pivot Point in the Engine!
-- link
-- This short video helped me to correct off centre pivot points on our static meshes.
-
+<br>
+
+> How do I stop the editor from moving the duplicated object?
+>
+> [link](https://forums.unrealengine.com/t/how-do-i-stop-the-editor-from-moving-the-duplicated-object/2034/5)
+>
+> 
+
+<br>
+
+> How to subtract objects from Marquee Selection?
+>
+> [link](https://forums.unrealengine.com/t/how-to-subtract-objects-from-marquee-selection/496445)
+>
+> 
+
+<br>
+
+> How To Change Player Start Position And Character In Unreal Engine 5   Beginner Tutorial
+>
+> [link](https://www.youtube.com/watch?v=MXmz_BhiZaY)
+>
+> 
+
+<br>
+
+> Little Nightmares Wiki
+>
+> [link](https://littlenightmares.fandom.com/wiki/Controls)
+>
+> I used this to learn the key bindings so they could be added to the project.
+
+<br>
+
+> How do I disconnect/cut/remove Blueprint wires/lines
+>
+> [link](https://forums.unrealengine.com/t/how-do-i-disconnect-cut-remove-blueprint-wires-lines/370820)
+>
+> This was from when I was starting out, I use this all this time when creating Blueprints.
+
+<br>
+
+> Learn Blueprints in Unreal Engine 5 - Beginner Tutorial
+>
+> [link](https://www.youtube.com/watch?v=opyV7rhKSFc)
+>
+> This is a beginner tutorial I used to help me get familiar with the basics of Blueprints in Unreal Engine.
+
+<br>
+
+> Variables - Actor Reference
+>
+> [link](https://www.youtube.com/watch?v=Ke3GaR8vQKI)
+>
+> 
+
+<br>
+
+> Events vs Functions - Development / Programming & Scripting
+>
+> [link](https://forums.unrealengine.com/t/events-vs-functions/632243)
+>
+> 
+
+<br>
+
+> Event Dispatchers - Unreal Engine 5 Tutorial
+>
+> [link](https://www.youtube.com/watch?v=r20VEPH_e0o)
+>
+> 
+
+<br>
+
+> AI Sight Detection And Chase - Unreal Engine 5 Tutorial
+>
+> [link](https://www.youtube.com/watch?v=tKrBdxm4uxI)
+>
+> 
+
+<br>
+
+> Unreal Engine AI with Behavior Trees - Unreal Engine
+>
+> [link](https://www.youtube.com/watch?v=iY1jnFvHgbE)
+>
+> This video is perfect for beginners learning how to implement AI in Unreal Engine with no prior experience. I used it to create the enemy in game with its hunting phase and random patrolling phase.
+
+<br>
+
+> Change Your Mesh's Pivot Point in the Engine! #unrealengine5 #modelingmode #pivot #ue5 #blender
+>
+> [link](https://www.youtube.com/watch?v=f50yoTWThnw)
+>
+> This short video helped me to correct off centre pivot points on our static meshes.
+
+<br>
+
+> Smart Enemy AI - (Part 1: Behavior Trees) | Tutorial in Unreal Engine 5 (UE5)
+>
+> [link](https://www.youtube.com/watch?v=-t3PbGRazKg)
+>
+> 
+
+<br>
 
 ## Implementation (Suggested Word Count 1,100)  
 
