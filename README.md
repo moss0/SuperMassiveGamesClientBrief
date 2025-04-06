@@ -312,6 +312,8 @@ https://github.com/moss0/SuperMassiveGamesClientBrief
 - Highlight any tools, frameworks, or techniques used, and explain how they contributed to the implementation.  
 - Include screenshots, diagrams, or code snippets where relevant to showcase your progress.
 
+I started by creating the camera system. I wanted to make it modular so the designers could reuse it with ease. At first I tried to make the camera itself 
+
 ### New Approaches  
 - Detail any innovative or new approaches you explored during the project.  
 - Explain why these approaches were chosen and how they differ from standard practices.  
@@ -332,7 +334,7 @@ I had many difficulties with the climbing system, there were many cases where so
 
 <iframe src="https://blueprintue.com/render/imchtvzh/" scrolling="no" allowfullscreen></iframe>
 
-#### The climbing event in BP_ThirdPersonCharacter. The example above is referring to the ongoing pin.
+> #### The climbing event in BP_ThirdPersonCharacter. The example above is referring to the "ongoing" pin.
 
 ## Outcomes (Suggested Word Count 300)
 
