@@ -99,11 +99,31 @@ https://github.com/moss0/SuperMassiveGamesClientBrief
 - Outline the initial goals or objectives you aim to achieve.  
 - Identify any anticipated challenges or potential issues that may arise during development.
 
+This project is a computer program, a series of instructions that a computer executes to generate an output, called a game. We never gave it an official name so the developer decided to call it: **Little Nightmares Client Brief**.
+Core concept is exploring a warehouse region while solving puzzles and avoiding the enemy in order to escape to safety from the dangerous warehouse.
+A games purpose is to provide an entertaining experience in a virtual space. In the case of this game, the type is called horror, which tries to induce feelings of terror, anxiousness and similar emotions in the player(s).
+
+The game's objective is to provide an experience very similar to the selected game from Super Massive Games, called "Little Nightmares 2" where the player controls a child in a dark, dreary world filled with humanoid monsters triple the size of the character with deformed features and sometimes supernatural abilities.
+The aim of Little Nightmares Client Brief is to create a creepy atmosphere environment in a warehouse with various puzzles involving generic object coming together to overcome an obstacle. There is also a chasing enemy inside the building, just like in the actual game, which will hunt you down as the player tries to solve the puzzles.
+
+One of the anticipated challenges is that the developer, designers and artists will experience trouble when it comes to managing Github together. This may cause Git merging errors as they have not been trained in its operation.
+
 ## Research (Suggested Word Count 1,100) 
 
 ### Methodology  
 - Identify relevant sources for the project, including articles, documentation, talks, and games.  
 - Detail how these sources have informed your practical work and influenced your approach.
+
+The main source for the project is the horror game "Little Nightmares 2" developed by Supermassive Games alongside Tarsier Studios and published by BANDAI NAMCO Entertainment.
+The following features of Little Nightmares 2 have been incorporated into the Client brief game:
+
+The perspective and sense of scale causes you to feel like an ant wandering into a world of giants. It is the main defining feature of the Little Nightmares series and sets it apart from other games.
+Little Nightmares 2's world is extremely unforgiving, with all the small characters at the mercy of the comparative giants. It is a dark, gritty world which can make one feel extremely unwelcome.
+The next feature is about the primal fear of being chased by a predator which causes a sharp spike in adrenalin levels and can be particularly thrilling. Horror entails having a simulation of a experience that removes your feelings of safety. It makes you leave your comfort zone without placing you in the situation itself.
+
+A game can make you suffer but you can find enjoyment in the suffering. Knowing that there is a reward after the suffering can sometimes make the suffering enjoyable. The reward in this case is the player remaining alive and being victorious over a greater force.
+
+
 
 ### Game Sources  
 - Conduct research on games that are relevant to your project. Provide a brief description of each game and the insights it offers.  
@@ -113,6 +133,12 @@ https://github.com/moss0/SuperMassiveGamesClientBrief
 ### Academic Sources  
 - Research academic papers, books, or articles that provide theoretical guidance for your project. Include a brief summary of each source.  
 - Describe how the academic research applies to your project and shapes your design and development decisions.
+
+Book 1
+
+Book 2
+
+Book 3
 
 ### Documentation Sources  
 - Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
