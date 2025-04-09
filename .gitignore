@@ -72,8 +72,6 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
-LittleNightmaresGame/Saved/Logs/LittleNightmaresGame-backup-2025.03.21-10.37.06.log
-LittleNightmaresGame/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini
-LittleNightmaresGame/Saved/Logs/LittleNightmaresGame.log
-LittleNightmaresGame/Saved/SourceControl/UncontrolledChangelists.json
-LittleNightmaresGame/Saved/Telemetry/Telemetry.json
+
+Saved/
+Intermediate/
