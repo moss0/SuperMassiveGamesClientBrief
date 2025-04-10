@@ -130,6 +130,9 @@ A game can make you suffer but you can find enjoyment in the suffering. Knowing 
 - Analyse the game's approach, cross-referencing it with other sources such as articles or talks to support your analysis.  
 - Explain how these insights apply to your project and influence your decision-making process.
 
+Little Nightmares 2
+After purchasing and playing Little Nightmares 2 in order to get a feel for the controls and mechanics
+
 ### Academic Sources  
 - Research academic papers, books, or articles that provide theoretical guidance for your project. Include a brief summary of each source.  
 - Describe how the academic research applies to your project and shapes your design and development decisions.
@@ -338,17 +341,57 @@ Book 3
 - Highlight any tools, frameworks, or techniques used, and explain how they contributed to the implementation.  
 - Include screenshots, diagrams, or code snippets where relevant to showcase your progress.
 
+As a developer I thought about how the design of the Blueprints I was making would affect the player's experience. For example, I would "cut and polish" the camera's code until it felt smooth and responsive. I gave the camera multiple settings for how it moves and rotates using two enumerations, along with other speed related and offset settings to ensure the designers can create a smooth experience for the player.
+
+I chose to use Blueprints exclusively as I was having immense technical stuggles trying to get C++ code to compile on my home computer. 
+
 I started by creating the camera system. I wanted to make it modular so the designers could reuse it with ease. At first I tried to make the camera itself 
+
+<br>
 
 ### New Approaches  
 - Detail any innovative or new approaches you explored during the project.  
 - Explain why these approaches were chosen and how they differ from standard practices.  
 - Evaluate the success of these approaches, including any challenges faced and lessons learned.
 
+The camera system I implemented was new for this project. Normally for third person games, I have the camera be controlled by an input of some kind, almost always the mouse. But this time I had the camera be controlled by a volume, which upon the player entering, sets the camera's movement and rotation states.  
+I feel as though I succeeded with this and got a smooth and seamless system going although there is no way to control the path the camera takes when entering one volume to another, it will always be a straight path. This issue can cause the camera to phase through walls and other objects. Perhaps I could use a spline path in the future to control how the camera moves when passing from one volume to another.
+
+<br>
+
 ### Testing
 - Document the user testing conducted, specifying the type of tests used (e.g., automated testing, guided user testing, blind testing).  
 - Present feedback or issues identified during testing, using graphs, tables, or visual aids to summarise results.  
 - Describe how these issues were addressed. If any issues were not resolved, provide a clear justification for leaving them unaddressed.
+
+#### **<ins>Testing level</ins>**
+
+I created a level dedicated exclusively for testing purposes. In this level, I spent almost all my project time testing new mechanics I was working on to create a seperate work space between me, and the designers. I did this in order to keep my own static environment to prevent merge conflicts and preventing me from being confused about suprising changes that could slow down my workflow.
+
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=1069253136535285578" height="295" width="345" frameborder="0" scrolling="no" ></iframe>
+
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=1069253136535286501" height="295" width="345" frameborder="0" scrolling="no" ></iframe>
+
+> The testing level
+
+#### **<ins>Beta test</ins>**
+
+On 21/03/2025, our group did beta testing. We did not get many results due to only being available towards the end of the day, which was caused due to poor planning on my part. I feel as though the little results we did get were problems about the game I was already aware of, however I still value them since beta testing is very important. In the final product, most of the problems mentioned were resolved.
+
+<br>
+
+| Timestamp | Q1: Did you enjoy the early playtest? |	Q2: Is there any way to improve on the mechanics? if yes, write below, if no, write N/A | Q3: Does the map and theme fit the aesthetic of the source material? If not, how could we improve on it? If there's no feedback you can provide, write N/A | Q4: We are currently missing audio, npcs and finalized models/animations, but is there anything else we need to add? | Any Additional Feedback? |
+| --- | --- | --- | --- | --- | --- |
+| 21/03/2025 15:54:51 |	Yes |	The weight of the boxes gets really clunky |	Yes | A ledder |
+| 21/03/2025 16:03:22 |	Yes |	Give the boxes some weight, having the fly about weightless not only wasn’t the most immersive but made it frustrating to complete the puzzle |	Kind of, great design but needs a more eerie/rundown aesthetic to match little nightmares | Some kind of threat enemy/ai or way to fail or die | Scale lighting and atmosphere are defining features of little nightmares if you can work on those |
+| 21/03/2025 16:07:13 |	Yes |	More, cubes less flying	| Yes |	Menus and tutorial |
+| 21/03/2025 16:14:14 |	Yes |	I’d really only add weight to the boxes |	N/a | I can’t really think of anythinf	|
+
+<br>
+
+<br>
+
+---
 
 ### Technical Difficulties
 - Identify any technical difficulties encountered during the implementation phase.  
@@ -356,11 +399,51 @@ I started by creating the camera system. I wanted to make it modular so the desi
 - If any difficulties remain unresolved, explain the impact on the project and any mitigation strategies used to minimise their effect.  
 - Reflect on what you would do differently in future projects to avoid similar issues.
 
+<br>
+
+#### **<ins>C++ compiling errors</ins>**
+
+My home computer was throwing errors when trying to get C++ code to compile.
+Here is a sample:
+
+> 0>Microsoft.Extensions.Primitives.targets(4,5): Warning  : Microsoft.Extensions.Primitives 9.0.2 doesn't support net6.0 and has not been tested with it. Consider upgrading your TargetFramework to net8.0 or later. You may also set <SuppressTfmSupportBuildWarnings>true</SuppressTfmSupportBuildWarnings> in the project file to ignore this warning and attempt to run in this unsupported configuration at your own risk.
+
+> 0>UnrealBuildTool.csproj: Error NU1605 : Warning As Error: Detected package downgrade: Microsoft.Extensions.Logging.Console from 9.0.2 to 6.0.0. Reference the package directly from the project to select a different version. 
+>  UnrealBuildTool -> EpicGames.Core -> Microsoft.Extensions.Logging.Console (>= 9.0.2) 
+>  UnrealBuildTool -> Microsoft.Extensions.Logging.Console (>= 6.0.0)
+
+After following many rounds of tutorials on how to set up Unreal Engine for Visual Studio, installing and uninstalling versions of .NET, checking dependencies, checking Visual Studio packages, and deleting the Saved and Intermediate folders then rebuilding the project solution, I realised how much time I was wasting, considering the deadline, and decided to give in and exclusively use Blueprints for this project.  
+It is possible that this problem is related to me using Windows 10 during the development of this project. With Windows 10's end of support coming soon on the [14<sup>th</sup> of October 2025](https://www.microsoft.com/en-gb/windows/end-of-support), perhaps the problem is due to Unreal Engine developers being more concerned about how their engine runs on Windows 11, or maybe I am just ignorant about something.
+
+<br>
+
+#### **<ins>Climbing system</ins>**
+
 I had many difficulties with the climbing system, there were many cases where something unintended would occur. For example, ensuring the correct movement mode and orient to movement boolean is set when moving off of the ladder, while still holding down the event key. I solved this example by using a branch to check if the player is this infront of the ladder and setting the movement mode and orient to movement if false.
 
 <iframe src="https://blueprintue.com/render/imchtvzh/" scrolling="no" allowfullscreen></iframe>
 
-> #### The climbing event in BP_ThirdPersonCharacter. The example above is referring to the "ongoing" pin.
+> The climbing event in BP_ThirdPersonCharacter. The example above is referring to the "OnGoing" pin.
+
+<br>
+
+#### **<ins>Camera volumes overlapping bug</ins>**
+
+This bug involves what happens when 2 or more BP_CameraVolume's overlap. Once you are inside a volume, then enter a new one, then go back into the old one, it will not switch over to the new camera volume.
+
+My solution was simply telling the designers to never overlap camera volumes so this bug will not occur in practice. I feel as though this is an efficient solution as it helps to save time that could be spent on other mechanics, helping me to meet the deadline, and it is not a game breaking issue that will cause crashes.
+
+<br>
+
+#### **<ins>AI enemy influencing the camera</ins>**
+
+This bug occurs when the AI enemy was changing the BP_CameraVolume the camera was set to, by moving into it. It caused the camera to move to the camera volume the enemy just entered, despite the player not being involved.
+
+After some experiments involving creating new Blueprints and changing their collsion settings, I discovered that the bug was being caused when a pawn collider entered the camera volume despite the fact that I check to see if the actor entering the volume is the player or not. I think this happens because the enemy was originally just a copy of the player Blueprint, BP_ThirdPersonCharacter, however I do not know how to change that.
+
+My solution was to set the collision settings for the enemies capsule collider and skeletal mesh from pawn, to world dynamic.
+
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=1069253136535285091" height="294" width="345" frameborder="0" scrolling="no" ></iframe>
 
 ## Outcomes (Suggested Word Count 300)
 
@@ -368,6 +451,8 @@ I had many difficulties with the climbing system, there were many cases where so
 - Provide a link to your complete source code or project files.
 - Ensure the link is publicly accessible or shared with the appropriate permissions.
 - Include a brief description of the files provided, highlighting key components or any instructions required to run the project.
+
+https://github.com/moss0/SuperMassiveGamesClientBrief
 
 ### Build Link
 - Share a link to a playable or executable build of your project.
@@ -378,6 +463,15 @@ I had many difficulties with the climbing system, there were many cases where so
 - Embed a video or provide a link to a recorded demonstration of your project in action.  
 - The video should showcase key features, functionality, and any unique elements of your project.  
 - Include a brief commentary or text overlay in the video to explain the different aspects of your project as they are shown.
+
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+  <iframe src="https://geo.dailymotion.com/player.html?video=x9hpe3e"
+    style="width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden; border:none;"
+    allowfullscreen
+    title="Dailymotion Video Player"
+    allow="web-share">
+  </iframe>
+</div>
 
 ## Reflection (Suggested Word Count 500) 
 
