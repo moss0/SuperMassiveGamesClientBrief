@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="development-commentary">Development Commentary</h1>
+<h2 id="project-outline">Project Outline</h2>
+<p>This project is a computer program, a series of instructions that a computer executes to generate an output, called a game. We never gave it an official name so I decided to call it: <strong>Little Nightmares Client Brief</strong>.
+Core concept is exploring a warehouse region while solving puzzles and avoiding the enemy in order to escape to safety from the dangerous warehouse.
+A games purpose is to provide an entertaining experience in a virtual space. In the case of this game, the type is called horror, which tries to induce feelings of terror, anxiousness and similar emotions in the player(s). This horror feature could be a selling point for our game.</p>
+<p>The target audience is players aged 15 years and over due to the light horror elements that might not be suitable for a younger audience. Although we would advise that very young people do not play it, however, it is really not that scary and one could argue that even three year olds can play it.</p>
+<p>The game's objective is to provide an experience very similar to the selected game from Super Massive Games, called &quot;Little Nightmares 2&quot; where the player controls a child in a dark, dreary world filled with humanoid monsters triple the size of the character with deformed features and sometimes supernatural abilities.
+The aim of Little Nightmares Client Brief is to create a creepy atmosphere environment in a warehouse with various puzzles involving generic object coming together to overcome an obstacle. There is also a chasing enemy inside the building, just like in the actual game, which will hunt you down as the player tries to solve the puzzles.</p>
+<p>This game could be transformed into a more refined game through future updates, for example, level redesign: More rooms featuring new puzzles and a changed atmosphere, improved enemy AI, new assets and improvements of old assets.</p>
+<p>One of the anticipated challenges is that the developer, designers and artists will experience trouble when it comes to managing Github together. This may cause Git merging errors as they have not been trained in its operation.</p>
+<h2 id="research">Research</h2>
+<h3 id="methodology">Methodology</h3>
+<p>The main source for the project is the horror game &quot;Little Nightmares 2&quot; developed by Supermassive Games alongside Tarsier Studios and published by BANDAI NAMCO Entertainment.
+The following features of Little Nightmares 2 have been incorporated into the Client brief game:</p>
+<p>The perspective and sense of scale causes you to feel like an ant wandering into a world of giants. It is the main defining feature of the Little Nightmares series and sets it apart from other games.
+Little Nightmares 2's world is extremely unforgiving, with all the small characters at the mercy of the comparative giants. It is a dark, gritty world which can make one feel extremely unwelcome.
+The next feature is about the primal fear of being chased by a predator which causes a sharp spike in adrenalin levels and can be particularly thrilling. Horror entails having a simulation of a experience that removes your feelings of safety. It makes you leave your comfort zone without placing you in the situation itself.</p>
+<p>A game can make you suffer but you can find enjoyment in the suffering. Knowing that there is a reward after the suffering can sometimes make the suffering enjoyable. The reward in this case is the player remaining alive and being victorious over a greater force.</p>
+<h3 id="game-sources">Game Sources</h3>
+<h4 id="inslittle-nightmares-2ins"><strong><ins>Little Nightmares 2</ins></strong></h4>
+<p>Little Nightmares 2, the game that we are basing our game on, is a horror game where you play as a tiny child in a world full of strange monsters that tower over you.
+I purchased and played Little Nightmares 2 in order to get a feel for the controls and mechanics so I could figure out how to ensure the controls in our game felt similar to Little Nightmares 2, and the sense of scale and speed were similar. This was done in an attempt to create an authentic and faithful experience to the original.</p>
+<h3 id="academic-sources">Academic Sources</h3>
+<br>
+<p>Beginners guide to game development - Punky Publishing</p>
+<p>This book helped me to understand the importance of beta testing a game and analysing how the players interact with the mechanics, &quot;where they get stuck, what they enjoy, and what frustrates them&quot; (page 40).
+How the player progresses through levels is discussed, and that gave me the idea of structuring the gameplay into small managable parts to give the player a sense of accomplishment (page 41).</p>
+<br>
+<p>Playing video games - Motives, Responses, and Consequences - Edited by Peter Vorderer &amp; Jennings Bryant</p>
+<p>Puzzle games are easy to pick up and the horror element often compliments it nicely. It is a low commitment type of game that is attractive to play and makes you relax while solving puzzles, dropping your guard and leaving you vulnerable, which horror element exploit (page 11).</p>
+<br>
+<h3 id="documentation-sources">Documentation Sources</h3>
+<br>
+<blockquote>
+<p>Little Nightmares 2 Gameplay Walkthrough FULL GAME (no commentary)</p>
+<p><a href="https://www.youtube.com/watch?v=gKCvphbCpPE">link</a></p>
+<p>I used this gameplay video to get a sense of scale of the environment and how it compares to the player.</p>
+</blockquote>
+<br>
+<blockquote>
+<p>Custom Events in Unreal Engine - Unreal Engine 5.5 Documentation</p>
+<p><a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/custom-events-in-unreal-engine">link</a></p>
+<p>I did not know how to make custom events so I looked it up.</p>
+</blockquote>
+<br>
+<blockquote>
+<p>UE5 Blueprint Tips - Timers</p>
+<p><a href="https://www.youtube.com/watch?v=yadaxTMjxQg">link</a></p>
+<p>I needed to learn how to set a delay.</p>
+</blockquote>
+<br>
+<blockquote>
+<p>Unreal Engine Quick Tips: Straight Blueprint Connections &amp; 15 Tips for Clean and Tidy Blueprints in Unreal Engine</p>
+<p><a href="https://www.youtube.com/watch?v=0NtaaemmZXY">link</a> &amp; <a href="https://www.youtube.com/watch?v=4D5UfHZx_qU">link</a></p>
+<p>Learning how to make my Blueprints neat and tidy improved my workflow.</p>
+</blockquote>
+<br>
+<blockquote>
+<p>Slow Down and Speed Up Time in Unreal Engine 5</p>
+<p><a href="https://www.youtube.com/watch?v=r3roJbLZ3BQ">link</a></p>
+<p>I used the Set Global Time Dilation node connected to debug keys to try and diagnose a bug I was having with the death by falling mechanic.</p>
+</blockquote>
+<br>
+<blockquote>
+<p>How to make Modular Widgets/UI - Base/Parent Widgets</p>
+<p><a href="https://www.youtube.com/watch?v=dWx6hIL5Gko">link</a></p>
+<p>I used this modular widgets tutorial in order to implement my main menu and pause menu.</p>
+</blockquote>
+<br>
+<blockquote>
+<p>Enhanced Input in Unreal Engine - Unreal Engine 5.5 Documentation</p>
+<p><a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/enhanced-input-in-unreal-engine">link</a></p>
+<p>I used this to properly understand enhanced input.</p>
+</blockquote>
+<br>
+<blockquote>
+<p>How to Make a Simple Climbing System in Unreal Engine 5</p>
+<p><a href="https://www.youtube.com/watch?v=wKafQYX8fz4">link</a></p>
+<p>This helped me to create a foundation for my climbing system. I build off of it an improved it later.</p>
+</blockquote>
+<br>
+<blockquote>
+<p>How to raycast/line trace in Unreal Engine</p>
+<p><a href="https://www.youtube.com/watch?v=DUjoilmrPDo">link</a></p>
+<p>I needed this to implement the climbing, grabbing and falling to death systems.</p>
+</blockquote>
+<br>
+<blockquote>
+<p>Casting Explained - Unreal Engine 5 Tutorial</p>
+<p><a href="https://www.youtube.com/watch?v=DBIlsxj5quA">link</a></p>
+</blockquote>
+<br>
+<blockquote>
+<p>How do I stop the editor from moving the duplicated object?</p>
+<p><a href="https://forums.unrealengine.com/t/how-do-i-stop-the-editor-from-moving-the-duplicated-object/2034/5">link</a></p>
+</blockquote>
+<br>
+<blockquote>
+<p>How to subtract objects from Marquee Selection?</p>
+<p><a href="https://forums.unrealengine.com/t/how-to-subtract-objects-from-marquee-selection/496445">link</a></p>
+</blockquote>
+<br>
+<blockquote>
+<p>How To Change Player Start Position And Character In Unreal Engine 5   Beginner Tutorial</p>
+<p><a href="https://www.youtube.com/watch?v=MXmz_BhiZaY">link</a></p>
+</blockquote>
+<br>
+<blockquote>
+<p>Little Nightmares Wiki</p>
+<p><a href="https://littlenightmares.fandom.com/wiki/Controls">link</a></p>
+<p>I used this to learn the key bindings so they could be added to the project.</p>
+</blockquote>
+<br>
+<blockquote>
+<p>How do I disconnect/cut/remove Blueprint wires/lines</p>
+<p><a href="https://forums.unrealengine.com/t/how-do-i-disconnect-cut-remove-blueprint-wires-lines/370820">link</a></p>
+<p>This was from when I was starting out, I use this all this time when creating Blueprints.</p>
+</blockquote>
+<br>
+<blockquote>
+<p>Learn Blueprints in Unreal Engine 5 - Beginner Tutorial</p>
+<p><a href="https://www.youtube.com/watch?v=opyV7rhKSFc">link</a></p>
+<p>This is a beginner tutorial I used to help me get familiar with the basics of Blueprints in Unreal Engine.</p>
+</blockquote>
+<br>
+<blockquote>
+<p>Variables - Actor Reference</p>
+<p><a href="https://www.youtube.com/watch?v=Ke3GaR8vQKI">link</a></p>
+</blockquote>
+<br>
+<blockquote>
+<p>Events vs Functions - Development / Programming &amp; Scripting</p>
+<p><a href="https://forums.unrealengine.com/t/events-vs-functions/632243">link</a></p>
+</blockquote>
+<br>
+<blockquote>
+<p>Event Dispatchers - Unreal Engine 5 Tutorial</p>
+<p><a href="https://www.youtube.com/watch?v=r20VEPH_e0o">link</a></p>
+</blockquote>
+<br>
+<blockquote>
+<p>AI Sight Detection And Chase - Unreal Engine 5 Tutorial</p>
+<p><a href="https://www.youtube.com/watch?v=tKrBdxm4uxI">link</a></p>
+</blockquote>
+<br>
+<blockquote>
+<p>Unreal Engine AI with Behavior Trees - Unreal Engine</p>
+<p><a href="https://www.youtube.com/watch?v=iY1jnFvHgbE">link</a></p>
+<p>This video is perfect for beginners learning how to implement AI in Unreal Engine with no prior experience. I used it to create the enemy in game with its hunting phase and random patrolling phase.</p>
+</blockquote>
+<br>
+<blockquote>
+<p>Change Your Mesh's Pivot Point in the Engine! #unrealengine5 #modelingmode #pivot #ue5 #blender</p>
+<p><a href="https://www.youtube.com/watch?v=f50yoTWThnw">link</a></p>
+<p>This short video helped me to correct off centre pivot points on our static meshes.</p>
+</blockquote>
+<br>
+<blockquote>
+<p>Smart Enemy AI - (Part 1: Behavior Trees) | Tutorial in Unreal Engine 5 (UE5)</p>
+<p><a href="https://www.youtube.com/watch?v=-t3PbGRazKg">link</a></p>
+</blockquote>
+<br>
+<h2 id="implementation">Implementation</h2>
+<h3 id="process">Process</h3>
+<p>As a developer I thought about how the design of the Blueprints I was making would affect the player's experience. For example, I would &quot;cut and polish&quot; the camera's code until it felt smooth and responsive. I gave the camera multiple settings for how it moves and rotates using two enumerations, along with other speed related and offset settings to ensure the designers can create a smooth experience for the player.</p>
+<p>I chose to use Blueprints exclusively as I was having immense technical stuggles trying to get C++ code to compile on my home computer.</p>
+<p>I started by creating the camera system. I wanted to make it modular so the designers could reuse it with ease. The camera always moves to a position called &quot;targetPos&quot; which is changed using BP_CameraVolume. The targetPos is changed to BP_CameraVolume's cameraTarget scene component so that the camera moves from position to position between camera volumes.</p>
+<p>Made the ladder climbing mechanic with a climb up ledge feature to help the player get up.</p>
+<p>The AI enemy was made last, it has a patrolling phase and a hunting phase using a behaviour tree with decorators to control the flow of execution.</p>
+<br>
+<h3 id="new-approaches">New Approaches</h3>
+<ul>
+<li>Detail any innovative or new approaches you explored during the project.</li>
+<li>Explain why these approaches were chosen and how they differ from standard practices.</li>
+<li>Evaluate the success of these approaches, including any challenges faced and lessons learned.</li>
+</ul>
+<p>The camera system I implemented was new for this project. Normally for third person games, I have the camera be controlled by an input of some kind, almost always the mouse. But this time I had the camera be controlled by a volume, which upon the player entering, sets the camera's movement and rotation states.<br>
+I feel as though I succeeded with this and got a smooth and seamless system going although there is no way to control the path the camera takes when entering one volume to another, it will always be a straight path. This issue can cause the camera to phase through walls and other objects. Perhaps I could use a spline path in the future to control how the camera moves when passing from one volume to another.</p>
+<br>
+<h3 id="testing">Testing</h3>
+<h4 id="instesting-levelins"><strong><ins>Testing level</ins></strong></h4>
+<p>I created a level dedicated exclusively for testing purposes. In this level, I spent almost all my project time testing new mechanics I was working on to create a seperate work space between me, and the designers. I did this in order to keep my own static environment to prevent merge conflicts and preventing me from being confused about suprising changes that could slow down my workflow.</p>
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=1069253136535285578" height="295" width="345" frameborder="0" scrolling="no" ></iframe>
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=1069253136535286501" height="295" width="345" frameborder="0" scrolling="no" ></iframe>
+<blockquote>
+<p>The testing level</p>
+</blockquote>
+<h4 id="insbeta-testins"><strong><ins>Beta test</ins></strong></h4>
+<p>On 21/03/2025, our group did beta testing. We did not get many results due to only being available towards the end of the day, which was caused due to poor planning on my part. I feel as though the little results we did get were problems about the game I was already aware of, however I still value them since beta testing is very important. In the final product, most of the problems mentioned were resolved.</p>
+<br>
+<table>
+<thead>
+<tr>
+<th>Timestamp</th>
+<th>Q1: Did you enjoy the early playtest?</th>
+<th>Q2: Is there any way to improve on the mechanics? if yes, write below, if no, write N/A</th>
+<th>Q3: Does the map and theme fit the aesthetic of the source material? If not, how could we improve on it? If there's no feedback you can provide, write N/A</th>
+<th>Q4: We are currently missing audio, npcs and finalized models/animations, but is there anything else we need to add?</th>
+<th>Any Additional Feedback?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21/03/2025 15:54:51</td>
+<td>Yes</td>
+<td>The weight of the boxes gets really clunky</td>
+<td>Yes</td>
+<td>A ledder</td>
+<td></td>
+</tr>
+<tr>
+<td>21/03/2025 16:03:22</td>
+<td>Yes</td>
+<td>Give the boxes some weight, having the fly about weightless not only wasn’t the most immersive but made it frustrating to complete the puzzle</td>
+<td>Kind of, great design but needs a more eerie/rundown aesthetic to match little nightmares</td>
+<td>Some kind of threat enemy/ai or way to fail or die</td>
+<td>Scale lighting and atmosphere are defining features of little nightmares if you can work on those</td>
+</tr>
+<tr>
+<td>21/03/2025 16:07:13</td>
+<td>Yes</td>
+<td>More, cubes less flying</td>
+<td>Yes</td>
+<td>Menus and tutorial</td>
+<td></td>
+</tr>
+<tr>
+<td>21/03/2025 16:14:14</td>
+<td>Yes</td>
+<td>I’d really only add weight to the boxes</td>
+<td>N/a</td>
+<td>I can’t really think of anythinf</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<br>
+<br>
+<hr>
+<h3 id="technical-difficulties">Technical Difficulties</h3>
+<br>
+<h4 id="insc-compiling-errorsins"><strong><ins>C++ compiling errors</ins></strong></h4>
+<p>My home computer was throwing errors when trying to get C++ code to compile.
+Here is a sample:</p>
+<blockquote>
+<p>0&gt;Microsoft.Extensions.Primitives.targets(4,5): Warning  : Microsoft.Extensions.Primitives 9.0.2 doesn't support net6.0 and has not been tested with it. Consider upgrading your TargetFramework to net8.0 or later. You may also set <SuppressTfmSupportBuildWarnings>true</SuppressTfmSupportBuildWarnings> in the project file to ignore this warning and attempt to run in this unsupported configuration at your own risk.</p>
+</blockquote>
+<blockquote>
+<p>0&gt;UnrealBuildTool.csproj: Error NU1605 : Warning As Error: Detected package downgrade: Microsoft.Extensions.Logging.Console from 9.0.2 to 6.0.0. Reference the package directly from the project to select a different version.
+UnrealBuildTool -&gt; EpicGames.Core -&gt; Microsoft.Extensions.Logging.Console (&gt;= 9.0.2)
+UnrealBuildTool -&gt; Microsoft.Extensions.Logging.Console (&gt;= 6.0.0)</p>
+</blockquote>
+<p>After following many rounds of tutorials on how to set up Unreal Engine for Visual Studio, installing and uninstalling versions of .NET, checking dependencies, checking Visual Studio packages, and deleting the Saved and Intermediate folders then rebuilding the project solution, I realised how much time I was wasting, considering the deadline, and decided to give in and exclusively use Blueprints for this project.<br>
+It is possible that this problem is related to me using Windows 10 during the development of this project. With Windows 10's end of support coming soon on the <a href="https://www.microsoft.com/en-gb/windows/end-of-support">14<sup>th</sup> of October 2025</a>, perhaps the problem is due to Unreal Engine developers being more concerned about how their engine runs on Windows 11, or maybe I am just ignorant about something.</p>
+<br>
+<h4 id="insclimbing-systemins"><strong><ins>Climbing system</ins></strong></h4>
+<p>I had many difficulties with the climbing system, there were many cases where something unintended would occur. For example, ensuring the correct movement mode and orient to movement boolean is set when moving off of the ladder, while still holding down the event key. I solved this example by using a branch to check if the player is this infront of the ladder and setting the movement mode and orient to movement if false.</p>
+<iframe src="https://blueprintue.com/render/imchtvzh/" scrolling="no" allowfullscreen></iframe>
+<blockquote>
+<p>The climbing event in BP_ThirdPersonCharacter. The example above is referring to the &quot;OnGoing&quot; pin.</p>
+</blockquote>
+<br>
+<h4 id="inscamera-volumes-overlapping-bugins"><strong><ins>Camera volumes overlapping bug</ins></strong></h4>
+<p>This bug involves what happens when 2 or more BP_CameraVolume's overlap. Once you are inside a volume, then enter a new one, then go back into the old one, it will not switch over to the new camera volume.</p>
+<p>My solution was simply telling the designers to never overlap camera volumes so this bug will not occur in practice. I feel as though this is an efficient solution as it helps to save time that could be spent on other mechanics, helping me to meet the deadline, and it is not a game breaking issue that will cause crashes.</p>
+<br>
+<h4 id="insai-enemy-influencing-the-camerains"><strong><ins>AI enemy influencing the camera</ins></strong></h4>
+<p>This bug occurs when the AI enemy was changing the BP_CameraVolume the camera was set to, by moving into it. It caused the camera to move to the camera volume the enemy just entered, despite the player not being involved.</p>
+<p>After some experiments involving creating new Blueprints and changing their collsion settings, I discovered that the bug was being caused when a pawn collider entered the camera volume despite the fact that I check to see if the actor entering the volume is the player or not. I think this happens because the enemy was originally just a copy of the player Blueprint, BP_ThirdPersonCharacter, however I do not know how to change that.</p>
+<p>My solution was to set the collision settings for the enemies capsule collider and skeletal mesh from pawn, to world dynamic.</p>
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=1069253136535285091" height="294" width="345" frameborder="0" scrolling="no" ></iframe>
+<h2 id="outcomes">Outcomes</h2>
+<h3 id="source-codeproject-files">Source Code/Project Files</h3>
+<p><a href="https://github.com/moss0/SuperMassiveGamesClientBrief">https://github.com/moss0/SuperMassiveGamesClientBrief</a></p>
+<h3 id="build-link">Build Link</h3>
+<p><a href="https://angelilux.itch.io/team-3-little-nightmares2-project">https://angelilux.itch.io/team-3-little-nightmares2-project</a></p>
+<h3 id="video-demonstration">Video Demonstration</h3>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+  <iframe src="https://geo.dailymotion.com/player.html?video=x9hq50u"
+    style="width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden; border:none;"
+    allowfullscreen
+    title="Dailymotion Video Player"
+    allow="web-share">
+  </iframe>
+</div>
+<h2 id="reflection">Reflection</h2>
+<h3 id="research-effectiveness">Research Effectiveness</h3>
+<p>The website links and YouTube link in my bibliography were extremely useful to me, as I am a visual learner. When I am exposed to large walls of technical text, I feel overwhelmed and stuggle to process it efficiently, especially if there are no complimentary images to aid me. Whenever I was stuck and could not find a resource, I would request help on the UCA discord server.</p>
+<h3 id="positive-analysis">Positive Analysis</h3>
+<p>The designers had the freedom to express and develop their ideas, I did not want to be too controlling to give them their chance to shine. I also had my own freedom to create what I thought the project needed with little friction between every one elses ideas.</p>
+<h3 id="negative-analysis">Negative Analysis</h3>
+<p>As a group, we did not work as smoothly as I would have hoped. I would occasionally take the role of leadership but most of the time, the designers would have the freedom to express and develop their ideas, however, the only puzzle created was done by myself, and I feel as though they could have made greater contributions. We only ended up with 3 rooms, and I know we could have done at least double that amount, if I expressed my concern.</p>
+<p>Regarding my contribution to this project, I tend to be too silent often and perhaps I could have spoken up more, for example, announcing that I am working on something to prevent Git merge conflicts and also encouraging people to contribute more. In other words, I need to develop more leadership skills.</p>
+<h3 id="next-time">Next Time</h3>
+<p>In the future, I want to start working hard from the get go, instead of doing most of the project in the later half of the time before submission.<br>
+I would also try to manage my time more effectively by letting go certain mechanics instead of obsessing over them, in order to increase my output speed. At what point is it that I must let go? I have to improve my judgement in that regard as it depends case by case.</p>
+<h2 id="bibliography">Bibliography</h2>
+<h3 id="books">Books</h3>
+<p>Beginners guide to game development - Punky Publishing At: <a href="https://www.facebook.com/punky.publishing/photos/hey-everyone-my-new-book-beginners-guide-to-game-development-is-going-live-on-am/122104800824453923/?_rdr">https://www.facebook.com/punky.publishing/photos/hey-everyone-my-new-book-beginners-guide-to-game-development-is-going-live-on-am/122104800824453923/?_rdr</a></p>
+<p>Playing video games - Motives, Responses, and Consequences - Edited by Peter Vorderer &amp; Jennings Bryant</p>
+<h3 id="online-resources">Online resources</h3>
+<p>15 Tips for Clean and Tidy Blueprints in Unreal Engine (2021) At: <a href="https://www.youtube.com/watch?v=4D5UfHZx_qU">https://www.youtube.com/watch?v=4D5UfHZx_qU</a> (Accessed  23/03/2025).</p>
+<p>AI Sight Detection And Chase - Unreal Engine 5 Tutorial (2022) At: <a href="https://www.youtube.com/watch?v=tKrBdxm4uxI">https://www.youtube.com/watch?v=tKrBdxm4uxI</a> (Accessed  27/03/2025).</p>
+<p>Casting Explained | Unreal Engine 5 Tutorial (2023) At: <a href="https://www.youtube.com/watch?v=DBIlsxj5quA">https://www.youtube.com/watch?v=DBIlsxj5quA</a> (Accessed  25/03/2025).</p>
+<p>Change Your Mesh’s Pivot Point in the Engine! #unrealengine5 #modelingmode #pivot #ue5 #blender (2024) At: <a href="https://www.youtube.com/watch?v=f50yoTWThnw">https://www.youtube.com/watch?v=f50yoTWThnw</a> (Accessed  01/04/2025).</p>
+<p>Controls (2023) At: <a href="https://littlenightmares.fandom.com/wiki/Controls">https://littlenightmares.fandom.com/wiki/Controls</a> (Accessed  24/03/2025).</p>
+<p>Custom Events in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/custom-events-in-unreal-engine">https://dev.epicgames.com/documentation/en-us/unreal-engine/custom-events-in-unreal-engine</a> (Accessed  23/03/2025).</p>
+<p>Enhanced Input in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/enhanced-input-in-unreal-engine">https://dev.epicgames.com/documentation/en-us/unreal-engine/enhanced-input-in-unreal-engine</a> (Accessed  24/03/2025).</p>
+<p>Event Dispatchers | Unreal Engine 5 Tutorial (2023) At: <a href="https://www.youtube.com/watch?v=r20VEPH_e0o">https://www.youtube.com/watch?v=r20VEPH_e0o</a> (Accessed  25/03/2025).</p>
+<p>Events vs Functions - Development / Programming &amp; Scripting (2022) At: <a href="https://forums.unrealengine.com/t/events-vs-functions/632243">https://forums.unrealengine.com/t/events-vs-functions/632243</a> (Accessed  25/03/2025).</p>
+<p>Gameplay Debugger and Numpad - Programming &amp; Scripting / AI (2017) At: <a href="https://forums.unrealengine.com/t/gameplay-debugger-and-numpad/386288">https://forums.unrealengine.com/t/gameplay-debugger-and-numpad/386288</a> (Accessed  09/04/2025).</p>
+<p>How do I disconnect/cut/remove Blueprint wires/lines - Programming &amp; Scripting / UI (2016) At: <a href="https://forums.unrealengine.com/t/how-do-i-disconnect-cut-remove-blueprint-wires-lines/370820">https://forums.unrealengine.com/t/how-do-i-disconnect-cut-remove-blueprint-wires-lines/370820</a> (Accessed  24/03/2025).</p>
+<p>How do I stop the editor from moving the duplicated object? - Community / Community &amp; Industry Discussion (2014) At: <a href="https://forums.unrealengine.com/t/how-do-i-stop-the-editor-from-moving-the-duplicated-object/2034/5">https://forums.unrealengine.com/t/how-do-i-stop-the-editor-from-moving-the-duplicated-object/2034/5</a> (Accessed  24/03/2025).</p>
+<p>How To Change Player Start Position And Character In Unreal Engine 5   Beginner Tutorial (2024) At: <a href="https://www.youtube.com/watch?v=MXmz_BhiZaY">https://www.youtube.com/watch?v=MXmz_BhiZaY</a> (Accessed  24/03/2025).</p>
+<p>How to Make a Simple Climbing System in Unreal Engine 5 (2022) At: <a href="https://www.youtube.com/watch?v=wKafQYX8fz4">https://www.youtube.com/watch?v=wKafQYX8fz4</a> (Accessed  24/03/2025).</p>
+<p>How to make Modular Widgets/UI | Base/Parent Widgets | Unreal Engine 5 Tutorial (2023) At: <a href="https://www.youtube.com/watch?v=dWx6hIL5Gko">https://www.youtube.com/watch?v=dWx6hIL5Gko</a> (Accessed  23/03/2025).</p>
+<p>How to raycast/line trace in Unreal Engine (2020) At: <a href="https://www.youtube.com/watch?v=DUjoilmrPDo">https://www.youtube.com/watch?v=DUjoilmrPDo</a> (Accessed  24/03/2025).</p>
+<p>How to subtract objects from Marquee Selection? - Community / Community &amp; Industry Discussion (2022) At: <a href="https://forums.unrealengine.com/t/how-to-subtract-objects-from-marquee-selection/496445">https://forums.unrealengine.com/t/how-to-subtract-objects-from-marquee-selection/496445</a> (Accessed  24/03/2025).</p>
+<p>Learn Blueprints in Unreal Engine 5 - Beginner Tutorial (2022) At: <a href="https://www.youtube.com/watch?v=opyV7rhKSFc">https://www.youtube.com/watch?v=opyV7rhKSFc</a> (Accessed  24/03/2025).</p>
+<p>Little Nightmares 2 Gameplay Walkthrough FULL GAME (no commentary) (2021) At: <a href="https://www.youtube.com/watch?v=gKCvphbCpPE">https://www.youtube.com/watch?v=gKCvphbCpPE</a> (Accessed  13/03/2025).</p>
+<p>Slow Down and Speed Up Time in Unreal Engine 5 (2022) At: <a href="https://www.youtube.com/watch?v=r3roJbLZ3BQ">https://www.youtube.com/watch?v=r3roJbLZ3BQ</a> (Accessed  23/03/2025).</p>
+<p>Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5) (2023) At: <a href="https://www.youtube.com/watch?v=gsyZdKYAT_4">https://www.youtube.com/watch?v=gsyZdKYAT_4</a> (Accessed  11/04/2025).</p>
+<p>Smart Enemy AI | (Part 1: Behavior Trees) | Tutorial in Unreal Engine 5 (UE5) (2023) At: <a href="https://www.youtube.com/watch?v=-t3PbGRazKg">https://www.youtube.com/watch?v=-t3PbGRazKg</a> (Accessed  03/04/2025).</p>
+<p>Smart Enemy AI | (Part 2: Patrolling &amp; States) | Tutorial in Unreal Engine 5 (UE5) (2023) At: <a href="https://www.youtube.com/watch?v=WFV5IewGks8">https://www.youtube.com/watch?v=WFV5IewGks8</a> (Accessed  08/04/2025).</p>
+<p>UE5 Blueprint Tips - Timers (2022) At: <a href="https://www.youtube.com/watch?v=yadaxTMjxQg">https://www.youtube.com/watch?v=yadaxTMjxQg</a> (Accessed  23/03/2025).</p>
+<p>Unreal Engine AI with Behavior Trees | Unreal Engine (2020) At: <a href="https://www.youtube.com/watch?v=iY1jnFvHgbE">https://www.youtube.com/watch?v=iY1jnFvHgbE</a> (Accessed  27/03/2025).</p>
+<p>Unreal Engine Quick Tips: Straight Blueprint Connections (2022) At: <a href="https://www.youtube.com/watch?v=0NtaaemmZXY">https://www.youtube.com/watch?v=0NtaaemmZXY</a> (Accessed  23/03/2025).</p>
+<p>Variables - Actor Reference (2020) At: <a href="https://www.youtube.com/watch?v=Ke3GaR8vQKI">https://www.youtube.com/watch?v=Ke3GaR8vQKI</a> (Accessed  24/03/2025).</p>
+<h2 id="declared-assets">Declared Assets</h2>
+<p>Thin man - Little Nightmares 2 asset.</p>
+
+</body>
+</html>
